@@ -30,13 +30,11 @@ public class BootStrapData implements CommandLineRunner{
 	  List <Opinion> opiniones1 = new ArrayList<>();
 	  Opinion opinion1 = new Opinion(new ObjectId().toString(),"Manu Rodriguez","rodriguez@gmail.com",LocalDate.parse("2022/05/11"),"Asi no hay forma de llegar a UEFA");
 	  Opinion opinion2 = new Opinion(new ObjectId().toString(),"ZuriGorri","goraleones@athletic.eus",LocalDate.parse("2022/05/12"),"La culpa de todo es de Urrutia. Ya veras con las elecciones como espabilan algunos...");
-	 
 	  opiniones1.add(opinion1);
 	  opiniones1.add(opinion2);
 	  
 	  List <Opinion> opiniones2 = new ArrayList<>();
 	  Opinion opinion3 = new Opinion(new ObjectId().toString(),"No te lo digo","nosvigilan@terra.es",LocalDate.parse("2022/05/16"),"Lo del Covid es una farsa, menuda conspiracion. Todo es una PLANDEMIA...");
-	  
 	  opiniones2.add(opinion3);
 	  
 	  

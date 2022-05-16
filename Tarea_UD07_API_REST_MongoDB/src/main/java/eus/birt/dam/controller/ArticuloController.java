@@ -29,18 +29,20 @@ public class ArticuloController {
 		return articuloRepository.findAll();
 	}
 	
-	/*@GetMapping("/{id}")
+	@GetMapping("/{id}")
 	public Articulo showById(@PathVariable("id") String id) {
 		return articuloRepository.findById(id).orElse(null);
-	}*/
+	}
 	
 	//Otra opcion es usar el nombre como elemento de busqueda en el EndPoint
 	//Se crea el metodo findByFirstName en ArticuloRepository (solamente cabecera es suficiente)
-		
+	/*	
 	@GetMapping("/{name}")
 	public List <Articulo> showByName(@PathVariable("name") String name) {
 		return articuloRepository.findByAutor(name);
 	}
+	
+	*/
 	
 	@PostMapping({"/",""})
 	@ResponseStatus (HttpStatus.CREATED)
